@@ -32,12 +32,7 @@ public class StatsService {
     }
 
     public static int findAverage(int[] purchases) {
-        int sum = findSum(purchases);
-        int average = 0;
-        for (int purchase : purchases) {
-            average = sum / purchases.length;
-        }
-        return average;
+        return findSum(purchases)/purchases.length;
     }
 
     public static int findMax(int[] purchases) {
